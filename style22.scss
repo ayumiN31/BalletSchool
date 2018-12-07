@@ -1,0 +1,31 @@
+@charset "utf-8";
+
+$mainColor: #ff2255;
+$subColor: #5566ff;
+$wrapWidth: 980px;
+$pd: 20px;
+// function getAbc(){ 定義 }
+@mixin boxStyle(){
+   width: $wrapWidth;
+   box-shadow: 5px 5px 2px rgba(0,0,0,0.5);
+}
+
+.picture {
+    @include boxStyle();
+    background: $subColor;
+}
+
+
+#wrap {
+    width: $wrapWidth - ($pd * 2);
+    background: darken($subColor, 20%);
+}
+
+
+@mixin style_at($bp:480px){
+    @media screen and (max-width: $bp){
+        @content;
+    }
+}
+
+
