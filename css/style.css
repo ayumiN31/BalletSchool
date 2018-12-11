@@ -3,7 +3,6 @@
 
 /*基本レイアウト*/
 body{
-
 }
 header,nav,.breadcrumb,.wrap,footer{
   width: 840px;
@@ -19,9 +18,14 @@ header h1{
   float:left;
 }
 
-h2{
-  background-image: url();
+header,li{
+/*  background-image: url(../images/banner.png);
+  background-size: 100px;
+  background-repeat: no-repeat;*/
+  list-style-type:none;
+
 }
+
 
 
 nav{
