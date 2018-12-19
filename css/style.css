@@ -2,8 +2,7 @@
 
 
 /*基本レイアウト*/
-body{
-}
+
 header,nav,.breadcrumb,.wrap,footer{
   width: 840px;
   margin-left: auto;
@@ -32,6 +31,36 @@ nav{
   clear: both;
 }
 
+
+/*TOP*/
+header .top_contact{
+  padding: 100px;
+  height:100px;
+  background-image: url(../images/banner.png);
+  background-repeat: no-repeat;
+  width: 500px;
+  float: right;
+  background-size:contain;
+  margin:20px 0px 0px 50px;
+  padding:30px 30px 30px 30px ;
+}
+
+
+header .top_contact p{
+padding:0 0 0 360px;
+width: 200px;
+}
+
+header .top_contact li a{
+padding:0 0 0 360px;
+width: 200px;
+}
+
+
+
+
+
+
 /*パンくずリスト*/
 
 
@@ -46,7 +75,7 @@ nav{
 .breadcrumb li:after{/* ▶を表示*/
   content: '>';
   padding: 0 3px;
-  color: #ff8000;
+  color: #ff8000;/*>*/
 }
 
 .breadcrumb li:last-child:after{
@@ -56,16 +85,20 @@ nav{
 .breadcrumb li a {
     display: inline-block;
     padding: 3px 10px;
-    border-radius: 15px;
-    text-decoration: none;
-    color: #ff8000;
-    background: #ffbf80;
-    font-size: 0.9em;
+    color: #ff8000;/*top orange*/
+    /*background: #ffbf80;*/
+/*    border-bottom:solid;*/
+/*    text-decoration: none;*/
 }
 
 .breadcrumb li a:hover {
     background: #ffe6cc;
-}display: block;
+    /*display: block;*/
+}
+
+/*.breadcrumb li,span{
+  color: #000;
+}*/
 
 nav ul{
 
